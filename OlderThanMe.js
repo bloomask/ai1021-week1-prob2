@@ -9,6 +9,8 @@ class Person {
         // Berke: Implement the case for me older than person
         if (this.age > otherPerson.age) {
             return `${otherPerson.name} is younger than me.`;
+        } else if (this.age == otherPerson.age){
+            return `${otherPerson.name} is the same age as me.`;
         }
         // Elvin: Implement the case for me younger than person
         // Sabina: Implement the case for same age
