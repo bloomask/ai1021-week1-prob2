@@ -7,6 +7,9 @@ class Person {
     // Method to compare ages
     compareAge(otherPerson) {
         // Berke: Implement the case for me older than person
+        if (this.age > otherPerson.age) {
+            return `${otherPerson.name} is younger than me.`;
+        }
         // Elvin: Implement the case for me younger than person
         // Sabina: Implement the case for same age
     }
@@ -20,3 +23,5 @@ const p3 = new Person("Lily", 24);
 console.log(p1.compareAge(p2)); // Expected: "Joel is older than me."
 console.log(p2.compareAge(p1)); // Expected: "Samuel is younger than me."
 console.log(p1.compareAge(p3)); // Expected: "Lily is the same age as me."
+
+
